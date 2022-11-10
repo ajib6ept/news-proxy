@@ -1,5 +1,7 @@
 ## Hacker™ News proxy
 
+[![Maintainability](https://api.codeclimate.com/v1/badges/22d8851488c5a3be23e2/maintainability)](https://codeclimate.com/github/ajib6ept/news-proxy/maintainability) [![Test Coverage](https://api.codeclimate.com/v1/badges/22d8851488c5a3be23e2/test_coverage)](https://codeclimate.com/github/ajib6ept/news-proxy/test_coverage) [![Actions Status](https://github.com/ajib6ept/news-proxy/workflows/check-code/badge.svg)](https://github.com/ajib6ept/news-proxy/actions)
+
 Реализовать простой http-прокси-сервер, запускаемый локально, который
 показывает содержимое страниц [Hacker News](https://news.ycombinator.com).
 Прокси должен модицифировать текст на страницах следующим образом: после

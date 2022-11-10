@@ -2,8 +2,11 @@
 lint:
 	poetry run flake8 news_proxy tests
 
+mypy:
+	poetry run mypy --strict .
+
 run:
-	poetry run python news_proxy/server_async.py
+	poetry run news-proxy
 
 test:
 	poetry run pytest -vvs

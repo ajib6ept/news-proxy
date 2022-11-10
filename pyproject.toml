@@ -3,6 +3,9 @@ name = "news-proxy"
 version = "0.1.0"
 description = ""
 authors = ["ajib6ept <asalbert@narod.ru>"]
+packages = [
+    { include = "news_proxy" },
+]
 
 [tool.poetry.dependencies]
 python = "^3.9"
@@ -14,7 +17,13 @@ pytest = "^7.2.0"
 [tool.poetry.dev-dependencies]
 black = "^22.10.0"
 flake8 = "^5.0.4"
+mypy = "^0.990"
+types-beautifulsoup4 = "^4.11.6"
+coverage = "^6.5.0"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+news-proxy = "news_proxy.scripts.news_proxy_server:main"
