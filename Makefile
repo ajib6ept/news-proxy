@@ -10,3 +10,8 @@ run:
 
 test:
 	poetry run pytest -vvs
+
+test_coverage:
+	poetry run coverage run --source=news_proxy -m pytest tests
+	poetry run coverage xml
+	poetry run coverage report
