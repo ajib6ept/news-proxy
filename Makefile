@@ -1,4 +1,7 @@
 
+install:
+	poetry install
+
 lint:
 	poetry run flake8 news_proxy tests
 
