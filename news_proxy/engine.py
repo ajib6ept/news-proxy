@@ -11,7 +11,8 @@ DEFAULT_PORT = 8232
 
 def modify_html(html: Union[str, bytes]) -> str:
     def tag_visible(element: bs4.element.PageElement) -> bool:
-        if element.parent is not None and element.parent.name in [
+        element_parent_name = getattr(element.parent, "name", "")
+        if element_parent_name in [
             "style",
             "script",
             "head",
